@@ -1,3 +1,3 @@
-version=22.07.24.055
+version=22.07.24.032
 url=https://github.com/ertugrul-yazilim/etiket_olusturucu/releases/latest
 changelog=Yeni PDF çıktısı, hata düzeltmeleri...
