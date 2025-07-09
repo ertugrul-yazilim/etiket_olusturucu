@@ -1,0 +1,52 @@
+SATRANÇ TURNUVASI ETİKET VE KATILIM BELGESİ OLUŞTURUCU - KULLANIM KILAVUZU
+
+Bu program, satranç turnuvalarında kupa/madalya etiketleri ve katılım belgeleri hazırlamak için geliştirilmiştir. Hiç bilmeyen bir kullanıcı için adım adım kullanım rehberi aşağıdadır.
+
+---
+
+1. PROGRAMI BAŞLATMA
+- Programı çalıştırdığınızda kısa bir açılış ekranı (splash) göreceksiniz.
+- Ana pencere açıldığında, üstte menü barı ve adım adım ilerleyeceğiniz bir arayüz bulunur.
+
+2. ADIM 1: TURNUVA BİLGİLERİ
+- Plaka numarasını girin, il adı otomatik gelir.
+- Turnuva adını yazın ("Satranç Turnuvası" ibaresi otomatik eklenir).
+- Başlangıç ve bitiş tarihini seçin.
+- Kategori sayısını belirleyin (örn. 4 kategori).
+
+3. ADIM 2: KATEGORİLER VE ÖDÜLLER
+- Her kategori için ad girin (örn. "Küçükler", "Yıldızlar").
+- Her kategoriye ödül ekleyin: Madalya, Kupa, Katılım Madalyası, En İyi Kadın, Diğer.
+- Ödül aralığı (örn. 1-3) veya adet (örn. 10 katılım madalyası) belirleyin.
+- "Düzenle" ile ödülü değiştirebilir, "Kaldır" ile silebilirsiniz.
+
+4. ADIM 3: ETİKET AYARLARI
+- Madalya ve kupa etiketlerinin boyutunu (cm cinsinden) ayarlayın.
+- Yazı tipi ve yazı rengi seçin.
+- İsteğe bağlı olarak sol/sağ üst köşeye logo ekleyin.
+
+5. ADIM 4: PDF OLUŞTURMA
+- "PDF Önizle" ile etiketlerin çıktısını geçici olarak görebilirsiniz.
+- "PDF Oluştur" ile etiketleri kalıcı olarak PDF dosyasına kaydedersiniz.
+- "Toplu Katılım Belgesi Oluştur" ile Excel’den isim/kategori listesi yükleyip toplu katılım belgesi PDF’i oluşturabilirsiniz.
+
+6. MENÜ BARINDAKİ YARDIMCI FONKSİYONLAR
+- Dosya > Çıkış: Programı kapatır.
+- Yardım > Kullanım Kılavuzu: Bu rehberi gösterir.
+- Yardım > Geri Bildirimde Bulun: Geliştiriciye öneri/hata bildirimi gönderebilirsiniz.
+- Hakkında: Program ve geliştirici bilgisi.
+- Güncelleme > Güncellemeleri Kontrol Et: Yeni sürüm olup olmadığını kontrol eder.
+
+7. SIK SORULANLAR
+- Kendi logomu ekleyebilir miyim? Evet, Etiket Ayarları adımında logo seçebilirsiniz.
+- Kendi yazı tipimi ekleyebilir miyim? ttf klasörüne .ttf dosyası ekleyip programı yeniden başlatın.
+- PDF açılmıyor: Bilgisayarınızda PDF görüntüleyici olmalı.
+- Hata alırsam ne yapmalıyım? Hata mesajı ve log dosyasını geliştiriciye iletebilirsiniz.
+
+8. İLETİŞİM
+- Geliştirici: Ertuğrul Kamil ŞAHİN
+- E-posta: ertugrul.yazilim@gmail.com
+
+---
+
+Her türlü öneri ve geri bildiriminiz için iletişime geçebilirsiniz. İyi turnuvalar! 
