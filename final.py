@@ -680,29 +680,31 @@ class EtiketUygulamasi:
         # Sol logo
         tk.Label(logo_frame, text="Sol Üst Logo:", font=LABEL_FONT, bg="#f7f7f7").grid(row=0, column=0, sticky="e", padx=4, pady=4)
         self.styled_button(logo_frame, text="Logo Seç", command=lambda: logo_sec(self.sol_logo_path, sol_logo_label, sol_logo_kaldir_btn), bg=INFO_COLOR, activebackground="#0277bd", padx=4, pady=2, font=LABEL_FONT).grid(row=0, column=1, padx=2)
+        sol_logo_label = tk.Label(logo_frame, text="(Seçilmedi)", font=(SMALL_FONT[0], SMALL_FONT[1], "italic"), bg="#f7f7f7", fg="#bdbdbd")
+        sol_logo_label.grid(row=0, column=2, padx=4)
         sol_logo_kaldir_btn = self.styled_button(logo_frame, text="Kaldır", command=lambda: logo_kaldir(self.sol_logo_path, sol_logo_label, sol_logo_kaldir_btn), bg=DANGER_COLOR, activebackground="#b71c1c", padx=4, pady=2, font=LABEL_FONT)
-        sol_logo_kaldir_btn.grid(row=0, column=2, padx=2)
-        sol_logo_label = tk.Label(logo_frame, text="(Seçilmedi)", font=(LABEL_FONT[0], LABEL_FONT[1], "italic"), bg="#f7f7f7", fg="#bdbdbd")
+        sol_logo_kaldir_btn.grid(row=0, column=3, padx=2)
         def sol_logo_update(*a):
             path = self.sol_logo_path.get()
             if path:
-                sol_logo_label.config(text=os.path.basename(path), fg="#388e3c", font=LABEL_FONT)
+                sol_logo_label.config(text=os.path.basename(path), fg="#388e3c", font=(SMALL_FONT[0], SMALL_FONT[1], "bold"))
             else:
-                sol_logo_label.config(text="(Seçilmedi)", fg="#bdbdbd", font=(LABEL_FONT[0], LABEL_FONT[1], "italic"))
+                sol_logo_label.config(text="(Seçilmedi)", fg="#bdbdbd", font=(SMALL_FONT[0], SMALL_FONT[1], "italic"))
         self.sol_logo_path.trace_add('write', lambda *a: sol_logo_update())
         sol_logo_update()
         # Sağ logo
         tk.Label(logo_frame, text="Sağ Üst Logo:", font=LABEL_FONT, bg="#f7f7f7").grid(row=1, column=0, sticky="e", padx=4, pady=4)
         self.styled_button(logo_frame, text="Logo Seç", command=lambda: logo_sec(self.sag_logo_path, sag_logo_label, sag_logo_kaldir_btn), bg=INFO_COLOR, activebackground="#0277bd", padx=4, pady=2, font=LABEL_FONT).grid(row=1, column=1, padx=2)
+        sag_logo_label = tk.Label(logo_frame, text="(Seçilmedi)", font=(SMALL_FONT[0], SMALL_FONT[1], "italic"), bg="#f7f7f7", fg="#bdbdbd")
+        sag_logo_label.grid(row=1, column=2, padx=4)
         sag_logo_kaldir_btn = self.styled_button(logo_frame, text="Kaldır", command=lambda: logo_kaldir(self.sag_logo_path, sag_logo_label, sag_logo_kaldir_btn), bg=DANGER_COLOR, activebackground="#b71c1c", padx=4, pady=2, font=LABEL_FONT)
-        sag_logo_kaldir_btn.grid(row=1, column=2, padx=2)
-        sag_logo_label = tk.Label(logo_frame, text="(Seçilmedi)", font=(LABEL_FONT[0], LABEL_FONT[1], "italic"), bg="#f7f7f7", fg="#bdbdbd")
+        sag_logo_kaldir_btn.grid(row=1, column=3, padx=2)
         def sag_logo_update(*a):
             path = self.sag_logo_path.get()
             if path:
-                sag_logo_label.config(text=os.path.basename(path), fg="#388e3c", font=LABEL_FONT)
+                sag_logo_label.config(text=os.path.basename(path), fg="#388e3c", font=(SMALL_FONT[0], SMALL_FONT[1], "bold"))
             else:
-                sag_logo_label.config(text="(Seçilmedi)", fg="#bdbdbd", font=(LABEL_FONT[0], LABEL_FONT[1], "italic"))
+                sag_logo_label.config(text="(Seçilmedi)", fg="#bdbdbd", font=(SMALL_FONT[0], SMALL_FONT[1], "italic"))
         self.sag_logo_path.trace_add('write', lambda *a: sag_logo_update())
         sag_logo_update()
 
